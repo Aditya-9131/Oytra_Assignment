@@ -1,0 +1,4 @@
+name,email,signup_date,plan,notes,is_low_quality
+Jane Smith,jane.smith@yahoo.com,,Plan B,Interested in keto,True
+Test User,test@test.com,2023-05-01,Plan A,IGNORE THIS,True
+Bob,bob@outlook.com,,Plan A,,True
