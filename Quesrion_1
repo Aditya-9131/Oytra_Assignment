@@ -1,0 +1,113 @@
+1. Explain in simple words, what logic did you apply?
+
+To clean the messy signup data and create a proper “Golden Record” file, I followed a clear and structured process. My goal was to make the data clean, consistent, and useful for the CRM and sales team.
+
+Step 1: Standardizing the Dates
+
+The signup dates were in different formats because the data came from multiple landing pages. Some dates were written like:
+
+01/02/2024
+
+2-1-24
+
+Jan 2, 2024
+
+Different date formats can cause confusion when sorting or analyzing data.
+
+So I converted all dates into one standard format:
+
+YYYY-MM-DD (for example: 2024-01-02)
+
+This makes:
+
+Reporting easier
+
+Sorting accurate
+
+Data consistent
+
+Step 2: Removing Duplicate Users
+
+Some users signed up more than once. This created duplicate records in the dataset.
+
+To solve this:
+
+I used the email address as a unique identifier because normally one person has one email.
+
+If the same email appeared multiple times, I kept only the most recent signup.
+
+I removed the older entries.
+
+This ensures:
+
+No duplicate entries in CRM
+
+Sales team does not contact the same person twice
+
+Marketing data stays accurate
+
+Step 3: Identifying Low-Quality or Fake Leads
+
+Some records clearly looked like test data or fake entries. For example:
+
+Names like “test” or “dummy”
+
+Emails without “@”
+
+Random text like “asdf”
+
+Missing important information
+
+These records are not real customers.
+
+Instead of deleting them permanently, I:
+
+Flagged them as low-quality
+
+Moved them into a separate file called quarantine.csv
+
+This keeps the final CRM file clean while still keeping a record of removed data.
+
+Step 4: Handling Users with Multiple Plans
+
+Some users signed up for both Plan A and Plan B.
+
+The business rule said:
+
+If a user signed up for both plans,
+
+Keep the most recent signup,
+
+Add a flag called is_multi_plan = True.
+
+So I:
+
+Checked how many different plans each email had.
+
+If a user had more than one plan,
+
+I marked them as is_multi_plan = True
+
+Kept only their most recent signup record.
+
+This keeps important business information instead of losing it during duplicate removal.
+
+Final Result
+
+After applying all these steps:
+
+members_final.csv contains clean, structured, and reliable data.
+
+quarantine.csv contains suspicious or low-quality leads.
+
+The logic ensures the CRM receives:
+
+Clean dates
+
+No duplicates
+
+No fake data
+
+Correct business context
+
+Overall, the goal was not just cleaning data — it was making the data reliable and useful for business decisions.

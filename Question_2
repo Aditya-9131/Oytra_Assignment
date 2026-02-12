@@ -1,0 +1,70 @@
+2. What was the most frustrating part of the data, and how would you explain deleting 20% of the leads?
+
+Most Frustrating Part
+
+The most frustrating part of the data was that it was very messy and inconsistent.
+
+Some problems I faced were:
+
+Dates were written in many different formats.
+
+Some rows had extra columns or missing values.
+
+Fake or test data was mixed with real user data.
+
+Some emails were invalid (missing “@” or domain).
+
+There was no clear validation rule before exporting the data.
+
+Because the data came from different landing pages, it did not follow one standard structure. This made it harder to clean and required extra checking and validation.
+
+In simple words, the data did not follow basic quality rules, so I had to carefully fix and filter it before using it.
+
+How I Would Explain Deleting 20% of Leads to a Non-Technical Manager
+
+I would explain it like this:
+
+“We did not delete real customers. We removed bad or unusable entries.”
+
+About 20% of the leads were:
+
+Test entries created during development
+
+Fake names like “test” or “asdf”
+
+Invalid email addresses
+
+Incomplete or broken records
+
+Corrupted rows due to formatting issues
+
+If we kept those leads in the CRM:
+
+Sales team would waste time calling fake numbers or invalid contacts.
+
+Email campaigns would bounce and reduce our sender reputation.
+
+Marketing reports would show incorrect conversion rates.
+
+The business might make wrong decisions based on bad data.
+
+So removing those 20% actually improves:
+
+Sales productivity
+
+Marketing accuracy
+
+CRM data quality
+
+Business decision-making
+
+It’s better to have fewer high-quality leads than many low-quality leads.
+
+Keeping bad data only increases confusion and reduces trust in reports.
+
+Final Business Explanation
+
+Deleting 20% of leads was not a loss —
+It was a data quality improvement step.
+
+Clean data helps the company grow faster and make smarter decisions.
